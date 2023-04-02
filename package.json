@@ -1,0 +1,16 @@
+{
+  "name": "cypress-automation",
+  "version": "1.0.0",
+  "description": "This is a project to study the Udemy course *JavaScript and Node.js Essentials for Test Automation* to improve understanding of JavaScript outside web browsers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/cypress run",
+    "cypress:run": "npm run test -- --headed"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.9.0",
+    "cypress-iframe": "^1.0.1"
+  }
+}
