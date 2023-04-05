@@ -1,4 +1,4 @@
-import ShopPage from "./ShopPage";
+const ShopPage = require("./ShopPage")
 
 class HomePage {
 
@@ -34,4 +34,4 @@ class HomePage {
 
 }
 
-export default HomePage;
+module.exports = HomePage;

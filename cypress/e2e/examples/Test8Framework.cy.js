@@ -12,7 +12,7 @@ describe("Agenda of framework topics and starting with test building", () => {
 
     it("My Next Test Case", () => {
         //Cypress.config("defaultCommandTimeout", 8000)
-        cy.visit("https://rahulshettyacademy.com/angularpractice/")
+        cy.visit("angularpractice/")
         let homePage = new HomePage()
         homePage.nameField.type(globalThis.data.name)
         homePage.txtTwoWayDataBinding.should("have.value", globalThis.data.name)

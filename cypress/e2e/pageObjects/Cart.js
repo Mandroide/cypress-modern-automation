@@ -1,4 +1,4 @@
-import Delivery from "./Delivery";
+const Delivery = require("./Delivery")
 
 class Cart {
     clickBtnCheckout() {
@@ -19,4 +19,4 @@ class Cart {
     }
 }
 
-export default Cart;
+module.exports = Cart;

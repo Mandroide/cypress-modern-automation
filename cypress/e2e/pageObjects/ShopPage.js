@@ -1,4 +1,4 @@
-import Cart from './Cart';
+const Cart = require("./Cart")
 class ShopPage {
 
     clickLnkCheckout() {
@@ -7,4 +7,4 @@ class ShopPage {
     }
 }
 
-export default ShopPage;
+module.exports = ShopPage;

@@ -5,12 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "node_modules/.bin/cypress run",
-    "cypress:run": "npm run test -- --headed"
+    "cypress:run": "npm run test -- --headed",
+    "e2e:record": "cypress run --record",
+    "test:ci:record": "run-p --race start e2e:record"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^16.0.3",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
     "cypress": "^12.9.0",
-    "cypress-iframe": "^1.0.1"
+    "cypress-iframe": "^1.0.1",
+    "esbuild": "^0.17.15"
   }
 }

@@ -1,14 +1,17 @@
 pipeline {
     agent {
         docker {
-            image 'node:lts-bullese-slim'
-            args '-p 3000:3000'
+            image 'cypress/base:latest'
         }
     }
     stages {
-        stage('Build') {
+        stage('build and test') {
+            environment {
+                CYPRESS_RECORD_KEY = credentials("cypress-automation-record-key")
+            }
             steps {
-                sh "npm install"
+                sh "npm ci"
+                sh "npm run "
             }
         }
     }

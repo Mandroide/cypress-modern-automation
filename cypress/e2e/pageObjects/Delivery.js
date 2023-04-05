@@ -17,4 +17,4 @@ class Delivery {
     }
 }
 
-export default Delivery;
+module.exports = Delivery;
