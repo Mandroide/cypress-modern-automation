@@ -6,6 +6,9 @@
   "scripts": {
     "test": "node_modules/.bin/cypress run",
     "cypress:run": "npm run test -- --headed",
+    "cypress:open-desktop": "cypress open --env allure=true --record false",
+    "cypress:run-desktop": "cypress run --env allure=true --record false",
+    "allure:report": "allure generate allure-results --clean -o allure-report",
     "e2e:record": "cypress run --record",
     "test:ci:record": "run-p --race start e2e:record"
   },
@@ -14,8 +17,10 @@
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^16.0.3",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "@shelex/cypress-allure-plugin": "^2.38.3",
     "cypress": "^12.9.0",
     "cypress-iframe": "^1.0.1",
-    "esbuild": "^0.17.15"
+    "esbuild": "^0.17.15",
+    "multiple-cucumber-html-reporter": "^3.3.0"
   }
 }

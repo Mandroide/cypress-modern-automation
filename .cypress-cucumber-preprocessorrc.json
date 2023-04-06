@@ -1,4 +1,8 @@
 {
+    "json": {
+        "enabled": true,
+        "output": "cypress/cucumberReports/results.json"
+    },
     "stepDefinitions": [
         "cypress/e2e/examples/step_definitions/**/*.{js,ts}"
     ]

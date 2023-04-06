@@ -131,3 +131,7 @@ dist
 
 cypress/videos
 cypress/screenshots
+cypress/cucumberReports
+*.ndjson
+**/allure-report
+**/allure-results
