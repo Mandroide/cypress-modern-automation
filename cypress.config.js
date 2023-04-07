@@ -32,7 +32,7 @@ module.exports = defineConfig({
     defaultCommandTimeout: 10000,
     baseUrl: "https://rahulshettyacademy.com/angularpractice/",
     setupNodeEvents,
-    specPattern: "cypress/e2e/examples/features/*.feature"
+    //specPattern: "cypress/e2e/examples/features/*.feature"
   },
 });
 
